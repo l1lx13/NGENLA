@@ -15,6 +15,7 @@
     max-width: 1280px;
     margin:0 auto;
     padding:0 40px;
+    width: 100%;
 }
 .btn{
     display: flex;
@@ -101,8 +102,12 @@
     font-weight: 700;
     letter-spacing: -4.25%;
 }
-.header__dropdown{
-    display: none;
+.header__dropdown-link{
+    padding: 30px 0;
+    font-size: 10px;
+    color:var(--black);
+    border-top: 1px solid #E9E9E9;
+    display: flex;
 }
 @media (max-width:1024px){
     .header__mobile{
@@ -121,12 +126,21 @@
         border-radius: 11px;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.07);
     }
-    .header__dropdown{
-        display: flex;
-        width: 100vw;
-        padding: 20px;
+    .header__dropdown {
         position: absolute;
-        top:65px
+        width: 100vw;
+        background: var(--white);
+        display: flex;
+        opacity: 0;
+        top: -100px;
+        pointer-events: none; 
+    }
+    .header__dropdown.active {
+        opacity: 1;
+        top: 40px;
+        pointer-events: all;
+        z-index: 9999;
+        padding: 8px 0 32px;
     }
 }
 /*hero*/
@@ -196,6 +210,8 @@
     z-index: 2;
       left: 50%;
   transform: translateX(-50%);
+  top:100px;
+  transition: all s ease;
 }
 .hero__wrapper-image svg{
     position: absolute;
@@ -228,7 +244,8 @@
         border-bottom-right-radius: 0;
     }
     .hero_image-ipad{
-        top: -46px;
+        top: 4px;
+        transition: all 1s ease;
     }
     .hero__image-kid{
         bottom: -4px;
