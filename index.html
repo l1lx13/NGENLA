@@ -41,9 +41,24 @@
                         <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.4794 6.35919L19.4794 19.4793H6.35922L6.34666 16.2527H13.8923L5.37991 7.74026L7.74028 5.37989L16.2527 13.8923L16.2464 6.35292L19.4794 6.35919Z" fill="#FF6E1B"/>
                         </svg>
-                        <img class="hero_image-ipad" src="src/images/Ipad.png" alt="">
-                        <img class="hero__image-kid" src="src/images/kid.png" alt="">
+                        <picture class="hero__image-kid">
+                            <source media="(min-width:1024px)" srcset="src/images/kid-desktop.png">
+                            <source media="(max-width:1024px)" srcset="src/images/kid-mobile.png">
+                            <img src="src/images/kid-desktop.png" alt="">
+                        </picture>
+                        <picture class="hero_image-ipad">
+                            <source media="(min-width:1024px)" srcset="src/images/Ipad-desktop.png">
+                            <source media="(max-width:1024px)" srcset="src/images/Ipad-mobile.png">
+                            <img src="src/images/Ipad-desktop.png" alt="">
+                        </picture>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <div class="about__wrapper">
+
                 </div>
             </div>
         </section>
