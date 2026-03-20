@@ -17,8 +17,8 @@
                     <a class="header__nav-link" href="#">Telegram</a>
                 </nav>
                 <div class="header__wrapper-nav header__mobile"><p>Поставки от официального производителя</p></div>
-                <button class="btn header__wrapper-btn header__desktop">Заказать<svg width="6" height="7" viewBox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.01037 4.9934V1.05184L5.64939 1.09142L0.735155 6.01131L0 5.27615L4.91423 0.361923L4.96513 1.00094H1.0066V0L6 0.0113101V4.9934H5.01037Z" fill="white"/></svg></button>
-                <div class="mobile__btn header__mobile"><svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0H0V1.5H12V0ZM12 3.75H0V5.25H12V3.75ZM12 7.5H0V9H12V7.5Z" fill="black"/></svg></div>
+                <button class="btn header__wrapper-btn header__desktop">Заказать<svg class="icon icon-white-ararow" aria-hidden="true"><use href="src/images/sprite.svg#white-arrow"></use></svg></button>
+                <div class="mobile__btn header__mobile"><svg class="icon icon-burger" aria-hidden="true"><use href="src/images/sprite.svg#burger"></use></svg></div>
 
             </div>
         </div>
@@ -38,9 +38,7 @@
                         <p class="hero__subtitle">Препарат вводят подкожно один раз в неделю. Рекомендуемая доза — 0,66 мг на килограмм веса тела в неделю, при необходимости её может скорректировать врач. Для пациентов весом более 45 кг, которым требуются дозы больше 30 мг, доза делится на две инъекции.</p>
                     </div>
                     <div class="hero__wrapper-image">
-                        <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M19.4794 6.35919L19.4794 19.4793H6.35922L6.34666 16.2527H13.8923L5.37991 7.74026L7.74028 5.37989L16.2527 13.8923L16.2464 6.35292L19.4794 6.35919Z" fill="#FF6E1B"/>
-                        </svg>
+                        <svg class="icon icon-red-ararow" aria-hidden="true"><use href="src/images/sprite.svg#red-arrow"></use></svg>
                         <picture class="hero__image-kid">
                             <source media="(min-width:1024px)" srcset="src/images/kid-desktop.png">
                             <source media="(max-width:1024px)" srcset="src/images/kid-mobile.png">
@@ -58,7 +56,27 @@
         <section class="about">
             <div class="container">
                 <div class="about__wrapper">
-
+                    <div class="about__header">
+                        <svg class="icon icon-line" aria-hidden="true"><use href="src/images/sprite.svg#line"></use></svg>
+                        <p class="about__header-title">Поставки от официального производителя</p>
+                        <svg class="icon icon-line" aria-hidden="true"><use href="src/images/sprite.svg#line"></use></svg>
+                    </div>
+                    <div class="about__content">
+                        <h3 class="about__content-title">NGENLA</h3>
+                        <h5 class="about__content-subtitle">заменяющий гормон роста </h5>
+                        <p class="about__content-text">Инновационный гормон роста пролонгированного действия: требует введения всего 1 раз в неделю, избавляет ребенка от ежедневных уколов, не нуждается в сложном разведении. Идеальное решение для комфортной терапии и спокойствия родителей.</p>
+                    </div>
+                    <div class="about__ui"></div>
+                    <picture class="about__background">
+                        <source media="(min-width: 1024px)" srcset="src/images/about-desktop.png">
+                        <source media="(max-width: 1024px)" srcset="src/images/about-mobile.png">
+                        <img src="src/images/about-desktop.png" alt="">
+                    </picture>
+                    <picture class="about__background-previe">
+                        <source media="(min-width: 1024px)" srcset="src/images/about__privie-desktop.png">
+                        <source media="(max-width: 1024px)" srcset="src/images/about__privie-mobile.png">
+                        <img src="src/images/about__privie-desktop.png" alt="">
+                    </picture>
                 </div>
             </div>
         </section>
