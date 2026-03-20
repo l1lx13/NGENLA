@@ -109,6 +109,9 @@
     border-top: 1px solid #E9E9E9;
     display: flex;
 }
+.header__dropdown,.header__dropdown .active{
+    display: none;
+}
 @media (max-width:1024px){
     .header__mobile{
         display: flex;
@@ -218,6 +221,7 @@
     top:15px;
     left:19px
 }
+
 @media (max-width:1024px){
     .hero__title{
         font-size: 40px;
@@ -330,6 +334,12 @@
     z-index: 1;
 }
 @media (max-width:1024px){
+    .about__header{
+        padding: 20px 0 16px;
+    }
+    .about__content{
+        top:69px;
+    }
     .about__header-title{
         display: none;
     }
