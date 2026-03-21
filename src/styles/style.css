@@ -128,6 +128,7 @@
     }
     .header__wrapper-nav{
         padding: 5px 8.5px;
+        font-size: 8px;
     }
     .header{
         border-radius: 11px;
@@ -384,11 +385,10 @@
         opacity: 1;
     }
     .about__content-title{
-        font-size: 28.31px;
+        font-size: 40.5px;
     }
     .about__content-subtitle{
-        padding: 2px 6px;
-        font-size: 8.09px;
+        padding: 4px 10px;
         margin-bottom: 10px;
     }
     .about__content-text{
@@ -438,16 +438,16 @@
     }
     .about__header-text:first-child .hero__subtitle{
         width: 151px;
-        font-size: 9px;
+        font-size: 12px;
     }
     .about__header-text:last-child .hero__subtitle{
-        font-size: 8px;
+        font-size: 11px;
     }
     .about__title-box{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 28px 0 9px;
+        padding: 28px 0 51px;
     }
     .about__content-title{
         font-size: 35.76px;
@@ -459,16 +459,20 @@
     }
     .about__content-subtitle{
         margin: 0;
+        font-size: 10.12px;
     }
     .about__content{
 
-    top: 35px;
+    top:-33px;
     left: 21px;
     }
     .about__content p{
-        font-size: 9px;
-        letter-spacing: -3%;
-        width: 132px;
-    font-weight: 100;
+        font-size: 12px;
+        letter-spacing: -4%;
+        width: 147px;
+        font-weight: 100;
+    }
+    .about__content p span{
+        font-weight: 600;
     }
 }
