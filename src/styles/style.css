@@ -89,11 +89,14 @@
     font-weight: 600;
     letter-spacing: -5%;
     color:var(--black);
+<<<<<<< HEAD
     display: flex;
 }
 .header__wrapper-logo img{
     width: 12px;
     height: 12px;
+=======
+>>>>>>> df36bd8c78d4862bb3089a598d0ef30a665104dc
 }
 .header__nav-link:hover{
     opacity: .55;
